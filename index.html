@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-CVA032</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script defer src="./src/js/face-api.min.js"></script>
+</head>
+<body>
+<div class="main show-main" id="main">
+    <div class="background-grid"></div>
+    <video id="video" width="600" height="450" autoplay></video>
+    <audio id="audio" src="" preload="auto"></audio>
+    <div id="frame"></div>
+    <div id="time">09:41 AM</div>
+    <div class="typewriter" id="typewriter-container"></div>
+    <div class="loader"></div>
+    <div id="transcription-container"></div>
+    <div class="loader" id="loader"></div>
+
+
+</div>
+
+<script type="module" src="./src/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.7/dist/bundle.min.js"></script>
+
+</body>
+</html>
